@@ -1,6 +1,7 @@
+
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,8 +17,35 @@ body {
     font-size: 2rem;
 }
 
+/* Input and Button styles */
 input, button {
     font-size: 2rem;
     padding: 1rem;
-    border-radius: 10px
+    border-radius: 10px;
+}
+
+/* Responsive design for small devices (mobile) */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Further adjustments for very small screens (phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    input, button {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
 }
